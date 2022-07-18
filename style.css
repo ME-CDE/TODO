@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
 }
-@media (min-height:600px) {
+@media (min-height:100px) {
     .background{
         height: 260px;
     }
