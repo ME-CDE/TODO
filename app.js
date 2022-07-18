@@ -1,4 +1,3 @@
-const input = document.getElementById('input-todo');
 const save = document.querySelector('.save');
 const listArea = document.querySelector('.todo-list-area');
 const clear = document.querySelector('.clear');
@@ -27,7 +26,7 @@ let inputStorage = [];
 
 const inputCode = (todo)=>{
     
-    if(input.value != ''){
+    if(inputTodo.value != ''){
         if (localStorage.getItem('todo')) {
             const newinputStorage = JSON.parse(localStorage.getItem('todo'));
             inputStorage = newinputStorage
