@@ -114,6 +114,7 @@ function del() {
             } else {
                 localStorage.clear()
                 inputStorage = []
+                number.textContent= ''
             }
             createDiv();
         })
