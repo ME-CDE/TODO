@@ -38,7 +38,6 @@ const inputCode = (todo)=>{
             localStorage.setItem('todo', JSON.stringify(inputStorage))
         }
     }
-    createDiv()
 }
 
 function checking(news, theme) {
@@ -129,6 +128,7 @@ const inputs =()=>{
     }
     inputCode(todo)
     input.value =''
+    createDiv()
 }
 
 clear.addEventListener('click', ()=>{
