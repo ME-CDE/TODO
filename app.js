@@ -38,6 +38,7 @@ const inputCode = (todo)=>{
             localStorage.setItem('todo', JSON.stringify(inputStorage))
         }
     }
+    createDiv()
 }
 
 function checking(news, theme) {
@@ -123,12 +124,11 @@ function del() {
 
 const inputs =()=>{
     const todo = {
-        todo : `${input.value}`,
+        todo : `${inputTodo.value}`,
         count : `true`
     }
     inputCode(todo)
     input.value =''
-    createDiv()
 }
 
 clear.addEventListener('click', ()=>{
