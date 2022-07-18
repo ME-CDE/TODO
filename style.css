@@ -188,6 +188,7 @@
         border-top-right-radius: 8px;
     }
     .left{
+        width: 90%;
         display: flex;
         align-items: center;
     }
@@ -225,7 +226,7 @@
         background-position: center;
     }
     .left p{
-        width: 220px;
+        width: 85%;
         word-wrap: break-word;
         color: hsl(235, 19%, 35%);
         font-size: 16px;
