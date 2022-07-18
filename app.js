@@ -127,7 +127,7 @@ const inputs =()=>{
         count : `true`
     }
     inputCode(todo)
-    input.value =''
+    inputTodo.value =''
 }
 
 clear.addEventListener('click', ()=>{
