@@ -91,13 +91,6 @@ function createDiv(){
             listArea.appendChild(div);
             div.classList.add('list');
         });
-        const length1 = newinputStorage.filter((count)=>{
-            if (count.count === "false") {
-                return count.count
-            }
-        });
-        number.textContent= `${length1.length} of ${newinputStorage.length} commpleted`
-
         checking(newinputStorage, theme)
     }
 }
