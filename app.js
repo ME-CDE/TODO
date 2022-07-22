@@ -57,7 +57,10 @@ function checking(news, theme) {
             }
             check.addEventListener('click', ()=>{
                 check.classList.add('check');
-                news[index].count = 'false'
+                news[index].count = 'false';
+                const newFalse = news[index];
+                news.splice(index,1);
+                news.push(newFalse);
                 localStorage.setItem('todo', JSON.stringify(news));
                 if (check.className === 'checker check') {
                     p[index].style.textDecoration ='Line-through'
@@ -75,6 +78,7 @@ function checking(news, theme) {
                 if (localStorage.getItem('todo')) {
                     number.textContent= `${length.length} of ${news.length} completed`
                 }
+                createDiv()
             });
         })
 }

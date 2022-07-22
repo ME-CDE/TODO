@@ -147,6 +147,7 @@
         align-items: center;
         font-weight: 700;
         padding: 0 25px 0 25px;
+        margin-bottom: 100px;
     }
 
     .todo-footer p{
@@ -249,11 +250,13 @@
 @media (min-width:768px) {
     .background{
         background-image: url(./images/bg-desktop-light.jpg);
+        height: 275px;
     }
     .backgroundDark{
         background-image: url(./images/bg-desktop-dark.jpg);
     }
     nav{
+        margin-top: 80px;
         max-width: 580px;
     }
     nav h2{
