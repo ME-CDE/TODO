@@ -29,8 +29,7 @@ const inputCode = (todo)=>{
     if(inputTodo.value != ''){
         if (localStorage.getItem('todo')) {
             const newinputStorage = JSON.parse(localStorage.getItem('todo'));
-            inputStorage = newinputStorage
-            inputStorage.unshift(todo);
+            inputStorage = [todo, ...newinputStorage]
             localStorage.setItem('todo', JSON.stringify(inputStorage))
         } else {
             inputStorage.push(todo);
@@ -54,8 +53,8 @@ function checking(news, theme) {
                         p[index].style.color ='hsl(233, 14%, 35%)'
                     }
                 }
-            }
-            check.addEventListener('click', ()=>{
+            }else{
+            checkers[index].addEventListener('click', ()=>{
                 check.classList.add('check');
                 news[index].count = 'false';
                 const newFalse = news[index];
@@ -80,6 +79,7 @@ function checking(news, theme) {
                 }
                 createDiv()
             });
+            };
         })
 }
 
